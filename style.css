@@ -1,22 +1,105 @@
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2fc;
+  color: #0a0a0a;
   text-align: center;
-  background-color: #f5f5ff;
-  padding: 50px;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 3em;
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  display: inline-block;
+.bench-logo {
+  width: 250px;
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.angle-section {
+  background: #0044cc;
+  color: white;
+  padding: 60px 20px;
+  transform: skewY(-6deg);
+  margin-top: 40px;
+}
+
+.angle-section * {
+  transform: skewY(6deg);
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px;
+  color: white;
+}
+
+.create-text {
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-top: 20px;
+}
+
+.main-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.photo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
   background-color: #0044cc;
   color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
+.photo {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.footer {
+  padding: 40px;
+  background-color: #f0f2fc;
+}
+
+.footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  margin-top: 10px;
+}
