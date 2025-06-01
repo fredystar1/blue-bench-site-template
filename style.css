@@ -22,6 +22,8 @@ body {
   margin: 20px 0;
 }
 
+/* ANGLE SECTION */
+
 .angle-section {
   background: #0044cc;
   color: white;
@@ -66,12 +68,15 @@ body {
   line-height: 1.6;
 }
 
+/* OVERLAPPING PHOTOS */
+
 .photo-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 40px;
+  padding: 60px 20px;
+  position: relative;
 }
 
 .card {
@@ -79,15 +84,56 @@ body {
   color: white;
   padding: 20px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  z-index: 3;
 }
 
-.photo {
+/* Stack Container */
+
+.photo-stack {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.stacked {
+  position: absolute;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
 }
+
+.stacked:hover {
+  transform: scale(1.05);
+}
+
+.lower {
+  top: 40px;
+  left: 60px;
+  z-index: -1;
+}
+
+/* BENCH TEXT SECTION */
+
+.background-banner {
+  background-color: #0044cc;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.bench-text {
+  font-size: 10rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 20px;
+  opacity: 0.08;
+  margin: 0;
+}
+
+/* FOOTER */
 
 .footer {
   padding: 40px;
