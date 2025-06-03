@@ -6,6 +6,20 @@ body {
   text-align: center;
 }
 
+/* Title at the top of the site */
+.site-title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  z-index: 99;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .hero {
   background-size: cover;
   background-position: center;
@@ -43,6 +57,7 @@ body {
   max-width: 90%;
   height: auto;
   margin: 20px auto;
+  display: block;
 }
 
 .hero-section {
@@ -98,5 +113,10 @@ body {
 
   .hero-text p {
     font-size: 0.9rem;
+  }
+
+  .site-title {
+    font-size: 1.1rem;
+    top: 10px;
   }
 }
