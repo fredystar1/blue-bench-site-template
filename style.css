@@ -1,151 +1,23 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f2fc;
-  color: #0a0a0a;
-  text-align: center;
-}
-
-.container {
-  max-width: 100%;
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: #0044cc;
+  font-family: 'Arial', sans-serif;
 }
 
-.bench-logo {
-  width: 250px;
-  margin-top: 50px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin: 20px 0;
-}
-
-/* ANGLE SECTION */
-
-.angle-section {
-  background: #0044cc;
-  color: white;
-  padding: 60px 20px;
-  transform: skewY(-6deg);
-  margin-top: 40px;
-}
-
-.angle-section * {
-  transform: skewY(6deg);
-}
-
-.left-text {
+.bench-fullscreen {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.vertical-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 10px;
-  color: white;
-}
-
-.create-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.main-content {
-  max-width: 600px;
-  margin: auto;
-}
-
-.description {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-/* OVERLAPPING PHOTOS */
-
-.photo-cards {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 60px 20px;
-  position: relative;
-}
-
-.card {
+  align-items: center;
+  height: 100vh;
   background-color: #0044cc;
-  color: white;
-  padding: 20px;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  z-index: 3;
 }
 
-/* Stack Container */
-
-.photo-stack {
-  position: relative;
-  width: fit-content;
-  margin: auto;
-}
-
-.stacked {
-  position: absolute;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s;
-}
-
-.stacked:hover {
-  transform: scale(1.05);
-}
-
-.lower {
-  top: 40px;
-  left: 60px;
-  z-index: -1;
-}
-
-/* BENCH TEXT SECTION */
-
-.background-banner {
-  background-color: #0044cc;
-  text-align: center;
-  padding: 100px 20px;
-  position: relative;
-}
-
-.bench-text {
-  font-size: 10rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 20px;
-  opacity: 0.08;
+.bench-fullscreen h1 {
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.08);
+  letter-spacing: 30px;
+  text-transform: uppercase;
   margin: 0;
-}
-
-/* FOOTER */
-
-.footer {
-  padding: 40px;
-  background-color: #f0f2fc;
-}
-
-.footer h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.icon {
-  width: 40px;
-  margin-top: 10px;
 }
