@@ -49,11 +49,11 @@ body {
   border-radius: 5px;
 }
 
-.gallery, .about, .services {
+.gallery {
   padding: 60px 20px;
 }
 
-.gallery img, .about img, .services img {
+.gallery img {
   max-width: 90%;
   height: auto;
   margin: 20px auto;
