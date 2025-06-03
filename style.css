@@ -9,16 +9,17 @@ body {
 /* Title at the top of the site */
 .site-title {
   position: absolute;
-  top: 20px;
+  top: 25px;
   width: 100%;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 3rem;           /* Bigger font size */
+  font-weight: 900;          /* Extra bold */
   color: white;
   z-index: 99;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
+
 
 .hero {
   background-size: cover;
